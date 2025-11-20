@@ -500,7 +500,7 @@ section.section.tst {
 }
 
 .read-more-link {
-    color: var(--primary-600);
+    color: var(--primary);
     font-weight: 600;
     text-decoration: none;
     display: inline-flex;
@@ -1266,6 +1266,123 @@ span.doller {
 }
 
 
+.support-hero {
+    background: #f4f7f6;
+    padding: 72px 0 60px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+}
+
+.support-hero h1 {
+    margin: 0 0 12px;
+    font-size: 44px;
+    color: var(--primary);
+}
+
+.support-hero .breadcrumb {
+    justify-content: center;
+}
+
+.support-main .container {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.support-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.support-copy h2 {
+    margin: 0 0 18px;
+    font-size: 32px;
+    color: var(--primary);
+}
+
+.support-copy p {
+    margin: 0;
+    color: #5e7f79;
+    line-height: 1.8;
+    font-weight: 600;
+}
+
+.support-card {
+    background: #e4ecea;
+    border-radius: 16px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    border: 1px solid rgba(142, 173, 168, 0.4);
+}
+
+.support-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: 600;
+    color: #35514d;
+}
+
+.support-field input,
+.support-field textarea {
+    border: 1px solid rgba(46, 85, 78, 0.25);
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-family: inherit;
+    font-size: 15px;
+    color: #122825;
+    background: #fff;
+    resize: vertical;
+}
+
+.support-field input:focus,
+.support-field textarea:focus {
+    outline: 2px solid rgba(89, 181, 182, 0.5);
+    border-color: transparent;
+}
+
+.support-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-dark {
+    background: #0f3f3a;
+    color: #fff;
+    border-color: #0f3f3a;
+}
+
+.btn-dark:hover {
+    background: #0c3430;
+    border-color: #0c3430;
+}
+
+.subscribe-panel {
+    padding: 80px 0;
+}
+
+.subscribe-card {
+    background: #f4f7f6;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    background-image: radial-gradient(circle at top right, rgba(89, 181, 182, 0.2), transparent 55%);
+}
+
+.subscribe-card .subscribe-form {
+    flex: 0 0 360px;
+    margin-left: 0;
+    width: auto;
+}
+
 /* Subscribe */
 .subscribe {
     padding: 40px 0;
@@ -1281,7 +1398,7 @@ span.doller {
     padding: 30px;
     box-shadow: var(--shadow);
     background-color: #E7EDED;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .subscribe-copy h3 {
@@ -1646,6 +1763,10 @@ span.doller {
     .how-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    .support-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1688,6 +1809,24 @@ span.doller {
     .view-toggle .toggle-btn {
         flex: 1;
         justify-content: center;
+    }
+
+    .support-card {
+        padding: 24px;
+    }
+
+    .support-actions {
+        justify-content: flex-start;
+    }
+
+    .subscribe-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .subscribe-card .subscribe-form {
+        width: 100%;
+        flex: initial;
     }
 
     .product-grid.list-view .product-card {
