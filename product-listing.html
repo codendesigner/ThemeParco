@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme Parco • Product Listing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime/uno.global.js"></script>
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container">
+            <p>Enjoy complimentary updates on every theme.</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <a class="brand" href="#">
+                <span class="brand-mark"><img src="assets/Logo.png" alt="Theme Parco"></span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-controls="primaryNav" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu" id="primaryNav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="product-listing.html">Products</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="support.html">Contact</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="#" class="cart-btn btn" aria-label="View cart"><img src="assets/cart.png"
+                            alt="cart icon"></a>
+                    <a class="btn btn-primary btn-small" href="#">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="listing-hero">
+            <div class="container">
+                <p class="eyebrow">Curated Marketplace</p>
+                <h1>Best Premium Collection</h1>
+                <p class="section-sub">Looking For The Perfect Design For Your Next Great Project? Explore Our Unique
+                    Collection Of The Best Premium Themes And Plugins.</p>
+            </div>
+        </section>
+
+        <section class="listing-controls">
+            <div class="container controls-row">
+                <p class="items-found" data-items-count>0 Items Found</p>
+                <div class="controls-right">
+                    <div class="view-toggle" role="group" aria-label="Toggle product view">
+                        <button class="toggle-btn active" type="button" data-view-btn="grid" aria-pressed="true">
+                            <span class="icon icon-grid" aria-hidden="true"></span>
+                            <span>Grid</span>
+                        </button>
+                        <button class="toggle-btn" type="button" data-view-btn="list" aria-pressed="false">
+                            <span class="icon icon-list" aria-hidden="true"></span>
+                            <span>List</span>
+                        </button>
+                    </div>
+                    <label class="sort-select">
+                        <span class="sr-only">Sort products</span>
+                        <select name="sort">
+                            <option value="best" selected>Best</option>
+                            <option value="newest">Newest</option>
+                            <option value="rated">Rated</option>
+                            <option value="trending">Trending</option>
+                            <option value="price">Price</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-list">
+            <div class="container">
+                <div class="product-grid" data-product-grid>
+                    <!-- 12 cards -->
+                    <article class="card product-card">
+                        <div class="card-img">
+                            <a href="single-product.html">
+                                <img src="assets/theme1.png" alt="Theme preview">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="single-product.html">Wristwatch Website Design</a></h3>
+                            <p class="card-description">More Than a Website; It's an Experience...</p>
+                            <div class="card-details">
+                                <span class="category">Figma Templates</span>
+                                <span class="price"><span class="doller">$</span>171</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="seller">950 Sales</span>
+                                <div class="card-actions">
+                                    <button class="btn-demo">Live Demo</button>
+                                    <button class="btn-cart"><span class="mdi--cart"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card product-card">
+                        <div class="card-img">
+                            <a href="single-product.html">
+                                <img src="assets/theme2.png" alt="Theme preview">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="single-product.html">Wristwatch Website Design</a></h3>
+                            <p class="card-description">More Than a Website; It's an Experience...</p>
+                            <div class="card-details">
+                                <span class="category">Figma Templates</span>
+                                <span class="price"><span class="doller">$</span>271</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="seller">950 Sales</span>
+                                <div class="card-actions">
+                                    <button class="btn-demo">Live Demo</button>
+                                    <button class="btn-cart"><span class="mdi--cart"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card product-card">
+                        <div class="card-img">
+                            <a href="single-product.html">
+                                <img src="assets/theme3.png" alt="Theme preview">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="single-product.html">Wristwatch Website Design</a></h3>
+                            <p class="card-description">More Than a Website; It's an Experience...</p>
+                            <div class="card-details">
+                                <span class="category">Figma Templates</span>
+                                <span class="price"><span class="doller">$</span>121</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="seller">950 Sales</span>
+                                <div class="card-actions">
+                                    <button class="btn-demo">Live Demo</button>
+                                    <button class="btn-cart"><span class="mdi--cart"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card product-card">
+                        <div class="card-img">
+                            <a href="single-product.html">
+                                <img src="assets/theme4.png" alt="Theme preview">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="single-product.html">Wristwatch Website Design</a></h3>
+                            <p class="card-description">More Than a Website; It's an Experience...</p>
+                            <div class="card-details">
+                                <span class="category">Figma Templates</span>
+                                <span class="price"><span class="doller">$</span>131</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="seller">950 Sales</span>
+                                <div class="card-actions">
+                                    <button class="btn-demo">Live Demo</button>
+                                    <button class="btn-cart"><span class="mdi--cart"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card product-card">
+                        <div class="card-img">
+                            <a href="single-product.html">
+                                <img src="assets/theme5.png" alt="Theme preview">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="single-product.html">Wristwatch Website Design</a></h3>
+                            <p class="card-description">More Than a Website; It's an Experience...</p>
+                            <div class="card-details">
+                                <span class="category">Figma Templates</span>
+                                <span class="price"><span class="doller">$</span>161</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="seller">950 Sales</span>
+                                <div class="card-actions">
+                                    <button class="btn-demo">Live Demo</button>
+                                    <button class="btn-cart"><span class="mdi--cart"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card product-card">
+                        <div class="card-img">
+                            <a href="single-product.html">
+                                <img src="assets/theme6.png" alt="Theme preview">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="single-product.html">Wristwatch Website Design</a></h3>
+                            <p class="card-description">More Than a Website; It's an Experience...</p>
+                            <div class="card-details">
+                                <span class="category">Figma Templates</span>
+                                <span class="price"><span class="doller">$</span>71</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="seller">950 Sales</span>
+                                <div class="card-actions">
+                                    <button class="btn-demo">Live Demo</button>
+                                    <button class="btn-cart"><span class="mdi--cart"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card product-card">
+                        <div class="card-img">
+                            <a href="single-product.html">
+                                <img src="assets/theme7.png" alt="Theme preview">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="single-product.html">Wristwatch Website Design</a></h3>
+                            <p class="card-description">More Than a Website; It's an Experience...</p>
+                            <div class="card-details">
+                                <span class="category">Figma Templates</span>
+                                <span class="price"><span class="doller">$</span>91</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="seller">950 Sales</span>
+                                <div class="card-actions">
+                                    <button class="btn-demo">Live Demo</button>
+                                    <button class="btn-cart"><span class="mdi--cart"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card product-card">
+                        <div class="card-img">
+                            <a href="single-product.html">
+                                <img src="assets/theme8.png" alt="Theme preview">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="single-product.html">Wristwatch Website Design</a></h3>
+                            <p class="card-description">More Than a Website; It's an Experience...</p>
+                            <div class="card-details">
+                                <span class="category">Figma Templates</span>
+                                <span class="price"><span class="doller">$</span>91</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="seller">950 Sales</span>
+                                <div class="card-actions">
+                                    <button class="btn-demo">Live Demo</button>
+                                    <button class="btn-cart"><span class="mdi--cart"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card product-card">
+                        <div class="card-img">
+                            <a href="single-product.html">
+                                <img src="assets/theme1.png" alt="Theme preview">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="single-product.html">Wristwatch Website Design</a></h3>
+                            <p class="card-description">More Than a Website; It's an Experience...</p>
+                            <div class="card-details">
+                                <span class="category">Figma Templates</span>
+                                <span class="price"><span class="doller">$</span>121</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="seller">950 Sales</span>
+                                <div class="card-actions">
+                                    <button class="btn-demo">Live Demo</button>
+                                    <button class="btn-cart"><span class="mdi--cart"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card product-card">
+                        <div class="card-img">
+                            <a href="single-product.html">
+                                <img src="assets/theme2.png" alt="Theme preview">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="single-product.html">Wristwatch Website Design</a></h3>
+                            <p class="card-description">More Than a Website; It's an Experience...</p>
+                            <div class="card-details">
+                                <span class="category">Figma Templates</span>
+                                <span class="price"><span class="doller">$</span>71</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="seller">950 Sales</span>
+                                <div class="card-actions">
+                                    <button class="btn-demo">Live Demo</button>
+                                    <button class="btn-cart"><span class="mdi--cart"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card product-card">
+                        <div class="card-img">
+                            <a href="single-product.html">
+                                <img src="assets/theme3.png" alt="Theme preview">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="single-product.html">Wristwatch Website Design</a></h3>
+                            <p class="card-description">More Than a Website; It's an Experience...</p>
+                            <div class="card-details">
+                                <span class="category">Figma Templates</span>
+                                <span class="price"><span class="doller">$</span>91</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="seller">950 Sales</span>
+                                <div class="card-actions">
+                                    <button class="btn-demo">Live Demo</button>
+                                    <button class="btn-cart"><span class="mdi--cart"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card product-card">
+                        <div class="card-img">
+                            <a href="single-product.html">
+                                <img src="assets/theme4.png" alt="Theme preview">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="single-product.html">Wristwatch Website Design</a></h3>
+                            <p class="card-description">More Than a Website; It's an Experience...</p>
+                            <div class="card-details">
+                                <span class="category">Figma Templates</span>
+                                <span class="price"><span class="doller">$</span>51</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="seller">950 Sales</span>
+                                <div class="card-actions">
+                                    <button class="btn-demo">Live Demo</button>
+                                    <button class="btn-cart"><span class="mdi--cart"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <nav class="listing-pagination" aria-label="Pagination">
+                    <button type="button" class="page-btn prev" aria-label="Previous page">‹</button>
+                    <ul>
+                        <li><button type="button" class="page-number active">1</button></li>
+                        <li><button type="button" class="page-number">2</button></li>
+                        <li><button type="button" class="page-number">3</button></li>
+                        <li><button type="button" class="page-number">...</button></li>
+                    </ul>
+                    <button type="button" class="page-btn next" aria-label="Next page">›</button>
+                </nav>
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <div class="container subscribe-bar">
+                <div class="subscribe-copy">
+                    <h3>Subscribe Now!</h3>
+                    <p>Stay ahead with website maintenance with one easy payment.</p>
+                </div>
+                <form class="subscribe-form" action="#" method="post">
+                    <input type="email" placeholder="Enter Your Email" aria-label="Email" required />
+                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="foot-brand">
+                <div class="brand">
+                    <span class="brand-mark"><img src="assets/footer-logo.png" alt="Footer Logo"></span>
+                    <span class="brand-text">Theme Parco</span>
+                </div>
+                <p>At issue: Welcome to Theme Parco. It's a curated world, where you'll find everything you need to
+                    build a great store.</p>
+                <div class="socials">
+                    <a class="mingcute--facebook-line" href="#" aria-label="Facebook"></a>
+                    <a class="hugeicons--new-twitter-ellipse" href="#" aria-label="Twitter"></a>
+                    <a class="mingcute--ins-line" href="#" aria-label="Instagram"></a>
+                    <a class="meteor-icons--youtube" href="#" aria-label="Youtube"></a>
+                </div>
+            </div>
+            <div class="foot-col link">
+                <h4>Useful Link</h4>
+                <ul>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Product Details</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Shopping Cart</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="foot-col link">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Blog Details</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="foot-col">
+                <h4>Phone</h4>
+                <p>+123 456 789</p>
+                <h4>Email</h4>
+                <p>email@example.com</p>
+                <h4>Location</h4>
+                <p>New York 37th Avenue, NY 10001.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2025 All rights reserved. Designed by CodeNdesigner.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            const navbar = document.querySelector('.navbar');
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.getElementById('primaryNav');
+
+            if (navbar && navToggle && navMenu) {
+                const closeMenu = () => {
+                    navbar.classList.remove('nav-open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                };
+
+                navToggle.addEventListener('click', () => {
+                    const isOpen = navbar.classList.toggle('nav-open');
+                    navToggle.setAttribute('aria-expanded', String(isOpen));
+                });
+
+                navMenu.addEventListener('click', (event) => {
+                    const target = event.target instanceof Element ? event.target.closest('a') : null;
+                    if (target) { closeMenu(); }
+                });
+
+                window.addEventListener('resize', () => {
+                    if (window.innerWidth > 1024) {
+                        closeMenu();
+                    }
+                });
+            }
+
+            const productGrid = document.querySelector('[data-product-grid]');
+            const viewButtons = document.querySelectorAll('[data-view-btn]');
+            const itemsCount = document.querySelector('[data-items-count]');
+
+            if (productGrid && viewButtons.length) {
+                const cards = productGrid.querySelectorAll('.product-card');
+                if (itemsCount) {
+                    itemsCount.textContent = `${cards.length} Items Found`;
+                }
+
+                viewButtons.forEach((button) => {
+                    button.addEventListener('click', () => {
+                        const view = button.getAttribute('data-view-btn');
+                        productGrid.classList.toggle('list-view', view === 'list');
+                        viewButtons.forEach((btn) => {
+                            const isActive = btn === button;
+                            btn.classList.toggle('active', isActive);
+                            btn.setAttribute('aria-pressed', String(isActive));
+                        });
+                    });
+                });
+            }
+        })();
+    </script>
+</body>
+
+</html>
+
