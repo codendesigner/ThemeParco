@@ -638,13 +638,13 @@ span.doller {
 
 /* Feature tiles */
 .feature-tiles {
-    padding: 36px 0
+    padding: 36px 0;
 }
 
 .tiles-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 18px
+    gap: 18px;
 }
 
 .tile {
@@ -655,7 +655,7 @@ span.doller {
     box-shadow: var(--shadow);
     display: flex;
     align-items: self-start;
-    gap: 14px
+    gap: 14px;          
 }
 
 .tile-icon {
@@ -683,14 +683,14 @@ span.doller {
     /* background: #f2f8f6; */
     padding: 54px 0;
     border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border)
+    border-bottom: 1px solid var(--border);
 }
 
 .strip-grid {
     display: grid;
     grid-template-columns: 1.2fr .8fr;
     gap: 24px;
-    align-items: center
+    align-items: center;
 }
 
 .strip-carousel {
@@ -702,7 +702,7 @@ span.doller {
 }
 
 .strip-viewport {
-    overflow: hidden
+    overflow: hidden;
 }
 
 .strip-track {
@@ -710,12 +710,12 @@ span.doller {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
     gap: 12px;
-    transition: transform .4s ease
+    transition: transform .4s ease;
 }
 
 .strip-track .card-media {
     height: 120px;
-    min-width: 200px
+    min-width: 200px;
 }
 
 .strip-btn {
@@ -724,17 +724,17 @@ span.doller {
     width: 36px;
     height: 36px;
     border-radius: 8px;
-    cursor: pointer
+    cursor: pointer;    
 }
 
 .strip-copy h3 {
     margin: 0 0 8px;
-    font-size: 24px
+    font-size: 24px;
 }
 
 .strip-copy p {
     margin: 0 0 12px;
-    color: var(--muted)
+    color: var(--muted);
 }
 
 /* Pricing */
@@ -742,7 +742,7 @@ span.doller {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 22px;
-    margin-top: 22px
+    margin-top: 22px;
 }
 
 .price-card {
@@ -750,7 +750,7 @@ span.doller {
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 22px;
-    box-shadow: var(--shadow)
+    box-shadow: var(--shadow);
 }
 
 /* .price-card.featured {
@@ -763,65 +763,65 @@ span.doller {
     margin: 0 0 6px;
     font-size: 16px;
     color: #0e3732;
-    font-weight: 700
+    font-weight: 700;                               
 }
 
 .price-row {
     display: flex;
     align-items: baseline;
     gap: 10px;
-    margin: 8px 0 12px
+    margin: 8px 0 12px;
 }
 
 .price-row .amount {
     font-size: 44px;
     line-height: 1;
     font-weight: 800;
-    letter-spacing: -0.02em
+    letter-spacing: -0.02em;
 }
 
 .price-row .cadence {
     color: #6b8f89;
-    font-weight: 700
+    font-weight: 700;
 }
 
 .btn-plan {
     background: #0f3f3a;
     color: #fff;
-    border-color: #0f3f3a
+    border-color: #0f3f3a;
 }
 
 .btn-plan:hover {
-    background: #0c3430
+    background: #0c3430;
 }
 
 .divider {
     height: 1px;
     background: var(--border);
-    margin: 18px 0
+    margin: 18px 0;
 }
 
 .plan-desc {
     color: #5b7b76;
-    margin: 0 0 16px
+    margin: 0 0 16px;
 }
 
 .feature-box {
     background: #F5FFFF;
     border: 1px solid #d6ebe5;
     border-radius: 10px;
-    padding: 16px
+    padding: 16px;
 }
 
 .feature-title {
     font-weight: 700;
-    margin: 0 0 10px
+    margin: 0 0 10px;
 }
 
 .feature-list {
     list-style: none;
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 .feature-list li {
@@ -848,7 +848,7 @@ span.doller {
 
 /* Subscribe */
 .subscribe {
-    padding: 40px 0
+    padding: 40px 0;
 }
 
 .subscribe-bar {
@@ -865,19 +865,19 @@ span.doller {
 }
 
 .subscribe-copy h3 {
-    margin: 0
+    margin: 0;
 }
 
 .subscribe-copy p {
     margin: 4px 0 0;
-    color: var(--muted)
+    color: var(--muted);
 }
 
 .subscribe-form {
     display: flex;
     gap: 10px;
     margin-left: auto;
-    width: 50%
+    width: 50%;
 }
 
 .subscribe-form input {
@@ -1263,7 +1263,7 @@ span.doller {
     }
 
     .footer-grid {
-        grid-template-columns: 1fr 1fr
+        grid-template-columns: 1fr 1fr;
     }
 
     .subscribe-form {
